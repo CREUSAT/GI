@@ -1,0 +1,24 @@
+<h1>Liste des propriétés</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Adresse</th>
+      <th>Taille</th>
+      <th>Nombre de chambres</th>
+      <th>Cout d'acquisition détaillé</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @properties.each do |property| %>
+      <tr>
+        <td><%= property.name %></td>
+        <td><%= property.address %></td>
+        <td><%= property.size %></td>
+        <td><%= property.num_rooms %></td>
+        <td><%= property.acquisition_cost %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

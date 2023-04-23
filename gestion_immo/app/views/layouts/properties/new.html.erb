@@ -1,0 +1,32 @@
+<h1>Ajouter une propriété</h1>
+
+<%= form_with model: @property, url: properties_path do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :address %><br>
+    <%= form.text_field :address %>
+  </p>
+
+  <p>
+    <%= form.label :size %><br>
+    <%= form.number_field :size %>
+  </p>
+
+  <p>
+    <%= form.label :num_rooms %><br>
+    <%= form.number_field :num_rooms %>
+  </p>
+
+  <p>
+    <%= form.label :acquisition_cost %><br>
+    <%= form.number_field :acquisition_cost %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
